@@ -25,7 +25,13 @@ export default function Home() {
           <span className="font-black text-white text-lg tracking-tight">OpenPay</span>
         </div>
 
-        <nav className="flex items-center gap-4">
+        <nav className="flex items-center gap-6">
+          <Link
+            href="/docs"
+            className="text-sm text-slate-400 hover:text-white transition-all font-semibold"
+          >
+            Documentation
+          </Link>
           <Link
             href="/login"
             className="text-sm text-slate-400 hover:text-white transition-all font-semibold"
@@ -34,7 +40,7 @@ export default function Home() {
           </Link>
           <Link
             href="/register"
-            className="text-sm bg-slate-900 border border-slate-805 hover:bg-slate-800 text-white px-4 py-2 rounded-xl transition-all font-semibold"
+            className="text-sm bg-slate-900 border border-slate-800 hover:bg-slate-800 text-white px-4 py-2 rounded-xl transition-all font-semibold"
           >
             Register
           </Link>
@@ -68,10 +74,10 @@ export default function Home() {
             <ArrowRight size={16} />
           </Link>
           <Link
-            href="/register"
-            className="flex items-center gap-2 px-6 py-3.5 bg-slate-900 hover:bg-slate-800 border border-slate-850 hover:border-slate-800 text-slate-355 hover:text-white rounded-2xl transition-all text-sm w-full sm:w-auto justify-center font-semibold"
+            href="/docs"
+            className="flex items-center gap-2 px-6 py-3.5 bg-slate-900 hover:bg-slate-800 border border-slate-800 hover:border-slate-700 text-slate-300 hover:text-white rounded-2xl transition-all text-sm w-full sm:w-auto justify-center font-semibold"
           >
-            Register Account
+            Read Documentation
           </Link>
         </div>
       </section>
