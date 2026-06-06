@@ -135,10 +135,12 @@ export async function POST(req: Request) {
           reasoning: parsingResult.reasoning,
         };
 
-        // Sign and POST webhook async
-        sendWebhook(webhookConfig.url, webhookConfig.secret, payload).catch(err =>
-          console.error('Failed to trigger merchant webhook:', err)
-        );
+        // Sign and POST webhook
+        try {
+          await sendWebhook(webhookConfig.url, webhookConfig.secret, payload);
+        } catch (err) {
+          console.error('Failed to trigger merchant webhook:', err);
+        }
       }
     }
 
