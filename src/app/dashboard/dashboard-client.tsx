@@ -284,6 +284,15 @@ export default function DashboardClient({
             Webhooks
             <ArrowUpRight size={12} />
           </Link>
+          <a
+            href="https://github.com/umeshadabala/openpay_companion_app/releases/download/V1/OpenPayCompanion.apk"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex items-center gap-1.5 px-3 py-1.5 bg-neutral-950 hover:bg-neutral-900 border border-neutral-850 text-neutral-300 hover:text-white rounded-xl transition-all text-xs font-semibold group"
+          >
+            <Smartphone size={12} className="text-neutral-500 group-hover:text-white transition-colors" />
+            Install App
+          </a>
           <Link
             href="/dashboard/devices"
             className="flex items-center gap-1.5 px-3 py-1.5 bg-indigo-650 hover:bg-indigo-600 border border-indigo-700/30 text-white rounded-xl transition-all text-xs font-semibold shadow-lg shadow-indigo-600/10"
