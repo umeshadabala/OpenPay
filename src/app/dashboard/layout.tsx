@@ -11,6 +11,7 @@ import {
   Webhook,
   User,
   LogOut,
+  BookOpen,
 } from 'lucide-react';
 import SignOutButton from './signout-button';
 
@@ -31,6 +32,7 @@ export default async function DashboardLayout({ children }: DashboardLayoutProps
     { name: 'Devices', href: '/dashboard/devices', icon: Smartphone },
     { name: 'Webhooks', href: '/dashboard/webhooks', icon: Webhook },
     { name: 'Profile', href: '/dashboard/profile', icon: User },
+    { name: 'Docs', href: '/dashboard/docs', icon: BookOpen },
   ];
 
   return (
